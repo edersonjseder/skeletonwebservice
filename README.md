@@ -94,8 +94,8 @@ The .war file will be in the <i>target</i> folder of the project (in my case, in
 </i>
 <li>Stop the Tomcat Server service</li>
 <li>To deploy in Tomcat 8 server, copy the .war file in the webapps in <i>tomcat directory</i> (<i><b>your_host/tomcat/apache-tomcat-8.5.13/webapps</b></i> the menu <i><b> > Run > As > Maven install</b></i>)</li><br/> 
-<li>Restart the Tomcat Server service and test the .war using the browser with the URL: http://your_ip:8080/location/rest/cities/city (can be the default localhost:8080)</li>
-<li>After you have it deployed (check the /logs dir for any problems), it should be accessible via: <u><i>http://your_host:your_port/location/rest/cities/city</i></u>. Or in the default, one of those:<br/>
+<li>Restart the Tomcat Server service and test the .war using the browser with the URL: http://your_ip:8080/skeleton/v1/departments (can be the default localhost:8080)</li>
+<li>After you have it deployed (check the /logs dir for any problems), it should be accessible via: <u><i>http://your_host:your_port/department/v1/department</i></u>. Or in the default, one of those:<br/>
 <u><i>http://the_ip:the_port/skeleton/v1/departments</i></u>
 <u><i>http://the_ip:the_port/skeleton/v1/permissions</i></u><br/>
 <u><i>http://the_ip:the_port/skeleton/v1/users</i></u><br/>
@@ -107,7 +107,7 @@ The .war file will be in the <i>target</i> folder of the project (in my case, in
 The database is MySQL Database 5 and it's used the following credentials to access:<p>
 <p><b>Username:</b> <i>root</i><br/>
 <p><b>Password:</b> <i>a</i><br/>
-<p><b>Schema:</b> <i>aroundinfo</i><br/>
+<p><b>Schema:</b> <i>skeletoninfo</i><br/>
 <p><b>Url:</b> <i>jdbc:mysql://localhost:3306/skeletoninfo</i><br/>
 
 And can be changed at the <i>connection.properties</i> file in the .war file to better attend portability. Please change for the proper database.
