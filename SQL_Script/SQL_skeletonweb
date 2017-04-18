@@ -1,0 +1,8 @@
+INSERT INTO department (department_id, description, name) VALUES(null,'department of models', 'model');
+
+INSERT INTO permission (permission_id, description, name) VALUES(null,'permission of writing', 'administrator');
+
+INSERT INTO user (user_id, description, name, department_id) VALUES(null,'admin user', 'master', 1);
+
+
+
